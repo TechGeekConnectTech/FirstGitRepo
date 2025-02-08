@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        string(Name:'Project Name',defaultValue:'Python_Project','description':'Enter Project Name')
+        string(name:'Project Name',defaultValue:'Python_Project','description':'Enter Project Name')
         choice(name: 'Environment Name', choices: ['Dev', 'UAT', 'Prod'], description: 'Select Environment Name')
     }
     stages{
