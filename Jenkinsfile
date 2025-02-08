@@ -4,6 +4,7 @@ pipeline {
         stage('Build'){
             steps{
                 echo "Im building Project from Git "
+                echo "Build Number - ${env.BUILD_NUMBER}, Branch Name - ${env.BRANCH_NAME}, JOB_URL - ${env.JOB_URL}"
             }
         }
         stage('Test'){
